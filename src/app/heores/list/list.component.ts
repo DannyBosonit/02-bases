@@ -13,4 +13,9 @@ export class ListComponent {
     'Hawkeye',
     'Thor',
   ];
+  public heroRemoved?: string;
+
+  removeLastHero(): void {
+    this.heroRemoved = this.heroNames.pop();
+  }
 }
