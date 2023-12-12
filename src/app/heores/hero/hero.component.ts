@@ -18,10 +18,15 @@ export class HeroComponent {
   }
 
   changeHero(): void {
-    this.name = 'danny phantom';
+    this.name = 'Danny Phantom';
   }
 
   changeAge(): void {
     this.age = 14;
+  }
+
+  resetValues() {
+    this.name = 'ironman';
+    this.age = 45;
   }
 }
