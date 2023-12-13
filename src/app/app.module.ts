@@ -7,12 +7,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { CounterModule } from './counter/components/counter.module';
 
 import { AppComponent } from './app.component';
-import { HeroComponent } from './heores/hero/hero.component';
-import { ListComponent } from './heores/list/list.component';
+import { HeroesModule } from './heores/components/heroes.module';
 
 @NgModule({
-  declarations: [AppComponent, HeroComponent, ListComponent],
-  imports: [BrowserModule, AppRoutingModule, CounterModule],
+  declarations: [AppComponent],
+  imports: [BrowserModule, AppRoutingModule, CounterModule, HeroesModule],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
