@@ -6,5 +6,5 @@ import { DbzService } from '../services/dbz.service';
   templateUrl: './main-page.component.html',
 })
 export class MainPageComponent {
-  constructor(public dbzService: DbzService) {}
+  constructor(private dbzService: DbzService) {}
 }
